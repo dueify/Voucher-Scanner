@@ -94,7 +94,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     func found(code: String) {
         let ac = UIAlertController(title: "Code found!", message: code, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Create voucher", style: .default, handler: {
-            _ in print("hej")
+            _ in print(code)
         }))
         AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
         present(ac, animated: true)
